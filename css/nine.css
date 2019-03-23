@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+.sudoku-box{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.pic-table{
+  float: left;
+  width: 80%;
+  max-width: 860px;
+  padding: 40px 0;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.table td,.table th{
+  vertical-align: middle;
+  text-align: center;
+}
+.table tr td:first-child,.table tr th:first-child{
+  text-align: right;
+}
+.table img,.table video,.table audio{
+  max-width: 200px;
+}
+.table th{
+  border: 0;
+}
+.table td,.table thead th{
+  border-color: #999;
+}
+.modal-content{
+  background-color: rgba(0,0,0,0);
+}
+.modal-body.pic{
+  width: 600px;
+  height: auto;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.modal-body.pic img{
+  width: 100%;
+  vertical-align: middle;
+}
