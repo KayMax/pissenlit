@@ -1,488 +1,488 @@
-/**¸´ÖÆÏÂÃæÄÚÈİ×÷ÎªĞÂÌíÏî
+/**å¤åˆ¶ä¸‹é¢å†…å®¹ä½œä¸ºæ–°æ·»é¡¹
 
-  {
-    number: "01", //ĞòºÅ  <br>
-    serial: "123", //ĞòÁĞºÅ
-    picture: "1.gif", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo ÎÄ×Ö£ºtext
-    media: "1.gif", //Ã½ÌåÎÄ¼şÃû
-    remark: ""  //±¸×¢   Èç¹ûÃ»ÓĞ±¸×¢  media ºóÃæÒªÉ¾µô¶ººÅ Ó¢ÎÄ
+ {
+    number: "01", //åºå·  <br>
+    serial: "123", //åºåˆ—å·
+    picture: "1.gif", //å›¾ç‰‡åç§°
+    type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo æ–‡å­—ï¼štext
+    media: "1.gif", //åª’ä½“æ–‡ä»¶å
+    remark: ""  //å¤‡æ³¨   å¦‚æœæ²¡æœ‰å¤‡æ³¨  media åé¢è¦åˆ æ‰é€—å· è‹±æ–‡
   },
 
-**/
+ **/
 
 
 
 var LISTS = [
-  {
-    number: "001<br>9 Juin 2018, 14:34", //ĞòºÅ
-    serial: "13", //ĞòÁĞºÅ
-    picture: "13.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "13.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
+    {
+        number: "001<br>9 Juin 2018, 14:34", //åºå·
+        serial: "13", //åºåˆ—å·
+        picture: "13.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "13.jpg" //åª’ä½“æ–‡ä»¶å
+    },
 
-  {
-    number: "002<br>9 Juin 2018, 15:00", //ĞòºÅ
-    serial: "19", //ĞòÁĞºÅ
-    picture: "19.jpg", //Í¼Æ¬Ãû³Æ
-    type: "video",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "19.mp4" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "003<br>9 Juin 2018, 16:18", //ĞòºÅ
-    serial: "17", //ĞòÁĞºÅ
-    picture: "17.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "17.jpg" //Ã½ÌåÎÄ¼şÃû   
-  },
-  {
-    number: "004<br>9 Juin 2018, 16:50", //ĞòºÅ
-    serial: "74", //ĞòÁĞºÅ
-    picture: "74.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "74.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "005<br>9 Juin 2018, 16:50", //ĞòºÅ
-    serial: "62", //ĞòÁĞºÅ
-    picture: "62.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "62.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "006<br>9 Juin 2018, 17:01", //ĞòºÅ
-    serial: "5", //ĞòÁĞºÅ
-    picture: "5.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "5.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "007<br>9 Juin 2018, 17:12", //ĞòºÅ
-    serial: "81", //ĞòÁĞºÅ
-    picture: "81.jpg", //Í¼Æ¬Ãû³Æ
-    type: "audio",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "81.m4a" //Ã½ÌåÎÄ¼şÃû
-   
-  },
-  {
-    number: "008<br>9 Juin 2018, 17:15", //ĞòºÅ
-    serial: "3", //ĞòÁĞºÅ
-    picture: "3.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "3.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "009<br>9 Juin 2018, 17:40", //ĞòºÅ
-    serial: "61", //ĞòÁĞºÅ
-    picture: "61.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "61.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "010<br>9 Juin 2018, 17:46", //ĞòºÅ
-    serial: "49", //ĞòÁĞºÅ
-    picture: "49.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "49.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "011<br>9 Juin 2018, 17:47", //ĞòºÅ
-    serial: "4", //ĞòÁĞºÅ
-    picture: "4.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "4.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "012<br>9 Juin 2018, 17:53", //ĞòºÅ
-    serial: "79", //ĞòÁĞºÅ
-    picture: "79.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "79.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "013<br>9 Juin 2018, 17:57", //ĞòºÅ
-    serial: "16", //ĞòÁĞºÅ
-    picture: "16.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "16.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "014<br>9 Juin 2018, 17:57", //ĞòºÅ
-    serial: "58", //ĞòÁĞºÅ
-    picture: "58.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "58.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "015<br>9 Juin 2018, 18:11", //ĞòºÅ
-    serial: "20", //ĞòÁĞºÅ
-    picture: "20.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "20.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "016<br>9 Juin 2018, 18:33", //ĞòºÅ
-    serial: "55", //ĞòÁĞºÅ
-    picture: "55.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "UN CALIN" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "017<br>10 Juin 2018, 18:02", //ĞòºÅ
-    serial: "54", //ĞòÁĞºÅ
-    picture: "54.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "54.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "018<br>10 Juin 2018, 18:02", //ĞòºÅ
-    serial: "10", //ĞòÁĞºÅ
-    picture: "10.jpg", //Í¼Æ¬Ãû³Æ
-    type: "audio",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "10.m4a"//Ã½ÌåÎÄ¼şÃû
+    {
+        number: "002<br>9 Juin 2018, 15:00", //åºå·
+        serial: "19", //åºåˆ—å·
+        picture: "19.jpg", //å›¾ç‰‡åç§°
+        type: "video",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "19.mp4" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "003<br>9 Juin 2018, 16:18", //åºå·
+        serial: "17", //åºåˆ—å·
+        picture: "17.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "17.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "004<br>9 Juin 2018, 16:50", //åºå·
+        serial: "74", //åºåˆ—å·
+        picture: "74.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "74.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "005<br>9 Juin 2018, 16:50", //åºå·
+        serial: "62", //åºåˆ—å·
+        picture: "62.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "62.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "006<br>9 Juin 2018, 17:01", //åºå·
+        serial: "5", //åºåˆ—å·
+        picture: "5.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "5.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "007<br>9 Juin 2018, 17:12", //åºå·
+        serial: "81", //åºåˆ—å·
+        picture: "81.jpg", //å›¾ç‰‡åç§°
+        type: "audio",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "81.m4a" //åª’ä½“æ–‡ä»¶å
 
-  },
-  {
-    number: "019<br>10 Juin 2018, 19:33", //ĞòºÅ
-    serial: "39", //ĞòÁĞºÅ
-    picture: "39.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER : DE L'EAU ET L'ENERGIE" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "020<br>10 Juin 2018, 21:15", //ĞòºÅ
-    serial: "1", //ĞòÁĞºÅ
-    picture: "1.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "1.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "021<br>12 Juin 2018, 14:06", //ĞòºÅ
-    serial: "25", //ĞòÁĞºÅ
-    picture: "25.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "25.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-  {
-    number: "022<br>12 Juin 2018, 14:28", //ĞòºÅ
-    serial: "103", //ĞòÁĞºÅ
-    picture: "103.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "103.jpg" //Ã½ÌåÎÄ¼şÃû
-  }, {
-    number: "023<br>12 Juin 2018, 14:58", //ĞòºÅ
-    serial: "29", //ĞòÁĞºÅ
-    picture: "29.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "29.jpg" //Ã½ÌåÎÄ¼şÃû
-  }, {
-    number: "024<br>12 Juin 2018, 14:58", //ĞòºÅ
-    serial: "45", //ĞòÁĞºÅ
-    picture: "45.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "45.jpg" //Ã½ÌåÎÄ¼şÃû
-  },{
-    number: "025<br>12 Juin 2018, 16:27", //ĞòºÅ
-    serial: "41", //ĞòÁĞºÅ
-    picture: "41.jpg", //Í¼Æ¬Ãû³Æ
-    type: "audio",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "41.m4a" //Ã½ÌåÎÄ¼şÃû
- 
-  },{
-    number: "026<br>12 Juin 2018, 16:32", //ĞòºÅ
-    serial: "59", //ĞòÁĞºÅ
-    picture: "59.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "59.jpg" //Ã½ÌåÎÄ¼şÃû
-  },{
-    number: "027<br>12 Juin 2018, 16:34", //ĞòºÅ
-    serial: "111", //ĞòÁĞºÅ
-    picture: "111.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "111.jpg" //Ã½ÌåÎÄ¼şÃû
-  },{
-    number: "028<br>12 Juin 2018, 16:36", //ĞòºÅ
-    serial: "80", //ĞòÁĞºÅ
-    picture: "80.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "80.jpg" //Ã½ÌåÎÄ¼şÃû
-  },{
-    number: "029<br>12 Juin 2018, 16:38", //ĞòºÅ
-    serial: "105", //ĞòÁĞºÅ
-    picture: "105.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "105.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "030<br>12 Juin 2018, 17:20", //ĞòºÅ
-    serial: "119", //ĞòÁĞºÅ
-    picture: "119.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER : LA PHOTO" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "031<br>14 Juin 2018, 14:54", //ĞòºÅ
-    serial: "128", //ĞòÁĞºÅ
-    picture: "128.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER : LA BOUDDHISME" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "032<br>14 Juin 2018, 15:14", //ĞòºÅ
-    serial: "82", //ĞòÁĞºÅ
-    picture: "82.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "82.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "033<br>14 Juin 2018, 15:38", //ĞòºÅ
-    serial: "68", //ĞòÁĞºÅ
-    picture: "68.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "68.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "034<br>14 Juin 2018, 15:40", //ĞòºÅ
-    serial: "70", //ĞòÁĞºÅ
-    picture: "70.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "70.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "035<br>14 Juin 2018, 15:44", //ĞòºÅ
-    serial: "64", //ĞòÁĞºÅ
-    picture: "64.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER<br>(PRESQUE)" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "035<br>14 Juin 2018, 15:50", //ĞòºÅ
-    serial: "38", //ĞòÁĞºÅ
-    picture: "38.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "38.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "036<br>14 Juin 2018, 15:51", //ĞòºÅ
-    serial: "53", //ĞòÁĞºÅ
-    picture: "53.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "53.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "037<br>14 Juin 2018, 15:55", //ĞòºÅ
-    serial: "91", //ĞòÁĞºÅ
-    picture: "91.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "91.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "038<br>14 Juin 2018, 16:07", //ĞòºÅ
-    serial: "23", //ĞòÁĞºÅ
-    picture: "23.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "23.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "039<br>14 Juin 2018, 16:31", //ĞòºÅ
-    serial: "101", //ĞòÁĞºÅ
-    picture: "101.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "101.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "040<br>14 Juin 2018, 16:35", //ĞòºÅ
-    serial: "77", //ĞòÁĞºÅ
-    picture: "77.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER<br>(PRESQUE)" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "041<br>14 Juin 2018, 16:56", //ĞòºÅ
-    serial: "63", //ĞòÁĞºÅ
-    picture: "63.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "63.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "042<br>14 Juin 2018, 16:59", //ĞòºÅ
-    serial: "14", //ĞòÁĞºÅ
-    picture: "14.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "14.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "043<br>14 Juin 2018, 17:10", //ĞòºÅ
-    serial: "116", //ĞòÁĞºÅ
-    picture: "116.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "116.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "044<br>14 Juin 2018, 17:28", //ĞòºÅ
-    serial: "52", //ĞòÁĞºÅ
-    picture: "52.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "52.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "045<br>14 Juin 2018, 17:32", //ĞòºÅ
-    serial: "67", //ĞòÁĞºÅ
-    picture: "67.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "¡¶QUE RESTERA-T-IL ?¡·<br>JHONNY HALLIDAY" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "046<br>14 Juin 2018, 17:28", //ĞòºÅ
-    serial: "15", //ĞòÁĞºÅ
-    picture: "15.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "¡¶¥¨¥ê©à¥¼¡·<br>THE BEETHOVEN" //Ã½ÌåÎÄ¼şÃû  
-  },
-{
-    number: "047<br>14 Juin 2018, 17:38", //ĞòºÅ
-    serial: "73", //ĞòÁĞºÅ
-    picture: "73.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "73.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "048<br>14 Juin 2018, 17:44", //ĞòºÅ
-    serial: "122", //ĞòÁĞºÅ
-    picture: "122.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "122.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "049<br>14 Juin 2018, 17:46", //ĞòºÅ
-    serial: "36", //ĞòÁĞºÅ
-    picture: "36.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "UN CALIN" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "050<br>14 Juin 2018, 17:47", //ĞòºÅ
-    serial: "83", //ĞòÁĞºÅ
-    picture: "83.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "83.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "051<br>14 Juin 2018, 17:52", //ĞòºÅ
-    serial: "109", //ĞòÁĞºÅ
-    picture: "109.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "109.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "052<br>14 Juin 2018, 18:09", //ĞòºÅ
-    serial: "18", //ĞòÁĞºÅ
-    picture: "18.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "18.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "053<br>14 Juin 2018, 18:09", //ĞòºÅ
-    serial: "28", //ĞòÁĞºÅ
-    picture: "28.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "06 51 ** 00 78<br>SON NUMERO DE PORTABLE" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "054<br>14 Juin 2018, 18:09", //ĞòºÅ
-    serial: "123", //ĞòÁĞºÅ
-    picture: "123.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "123.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "055<br>14 Juin 2018, 18:15", //ĞòºÅ
-    serial: "69", //ĞòÁĞºÅ
-    picture: "69.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "UN GESTE DE FAIRE COUCOU" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "056<br>14 Juin 2018, 18:17", //ĞòºÅ
-    serial: "27", //ĞòÁĞºÅ
-    picture: "27.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "27.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "057<br>14 Juin 2018, 18:34", //ĞòºÅ
-    serial: "24", //ĞòÁĞºÅ
-    picture: "24.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER<br>(ECHOUE)" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "058<br>14 Juin 2018, 18:34", //ĞòºÅ
-    serial: "76", //ĞòÁĞºÅ
-    picture: "76.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "SE PARLER<br>(ECHOUE)" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "059<br>14 Juin 2018, 18:42", //ĞòºÅ
-    serial: "50", //ĞòÁĞºÅ
-    picture: "50.jpg", //Í¼Æ¬Ãû³Æ
-    type: "img",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "50.jpg" //Ã½ÌåÎÄ¼şÃû
-  },
-{
-    number: "060<br>14 Juin 2018, 18:47", //ĞòºÅ
-    serial: "65", //ĞòÁĞºÅ
-    picture: "65.jpg", //Í¼Æ¬Ãû³Æ
-    type: "text",//Ã½ÌåÀàĞÍ Í¼Æ¬£ºimg ÒôÆµ£ºaudio ÊÓÆµ£ºvideo
-    media: "UN SOURIRE D'INNOCENCE" //Ã½ÌåÎÄ¼şÃû
-  },
+    },
+    {
+        number: "008<br>9 Juin 2018, 17:15", //åºå·
+        serial: "3", //åºåˆ—å·
+        picture: "3.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "3.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "009<br>9 Juin 2018, 17:40", //åºå·
+        serial: "61", //åºåˆ—å·
+        picture: "61.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "61.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "010<br>9 Juin 2018, 17:46", //åºå·
+        serial: "49", //åºåˆ—å·
+        picture: "49.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "49.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "011<br>9 Juin 2018, 17:47", //åºå·
+        serial: "4", //åºåˆ—å·
+        picture: "4.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "4.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "012<br>9 Juin 2018, 17:53", //åºå·
+        serial: "79", //åºåˆ—å·
+        picture: "79.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "79.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "013<br>9 Juin 2018, 17:57", //åºå·
+        serial: "16", //åºåˆ—å·
+        picture: "16.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "16.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "014<br>9 Juin 2018, 17:57", //åºå·
+        serial: "58", //åºåˆ—å·
+        picture: "58.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "58.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "015<br>9 Juin 2018, 18:11", //åºå·
+        serial: "20", //åºåˆ—å·
+        picture: "20.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "20.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "016<br>9 Juin 2018, 18:33", //åºå·
+        serial: "55", //åºåˆ—å·
+        picture: "55.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "UN CALIN" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "017<br>10 Juin 2018, 18:02", //åºå·
+        serial: "54", //åºåˆ—å·
+        picture: "54.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "54.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "018<br>10 Juin 2018, 18:02", //åºå·
+        serial: "10", //åºåˆ—å·
+        picture: "10.jpg", //å›¾ç‰‡åç§°
+        type: "audio",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "10.m4a"//åª’ä½“æ–‡ä»¶å
+
+    },
+    {
+        number: "019<br>10 Juin 2018, 19:33", //åºå·
+        serial: "39", //åºåˆ—å·
+        picture: "39.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER : DE L'EAU ET L'ENERGIE" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "020<br>10 Juin 2018, 21:15", //åºå·
+        serial: "1", //åºåˆ—å·
+        picture: "1.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "1.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "021<br>12 Juin 2018, 14:06", //åºå·
+        serial: "25", //åºåˆ—å·
+        picture: "25.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "25.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "022<br>12 Juin 2018, 14:28", //åºå·
+        serial: "103", //åºåˆ—å·
+        picture: "103.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "103.jpg" //åª’ä½“æ–‡ä»¶å
+    }, {
+        number: "023<br>12 Juin 2018, 14:58", //åºå·
+        serial: "29", //åºåˆ—å·
+        picture: "29.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "29.jpg" //åª’ä½“æ–‡ä»¶å
+    }, {
+        number: "024<br>12 Juin 2018, 14:58", //åºå·
+        serial: "45", //åºåˆ—å·
+        picture: "45.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "45.jpg" //åª’ä½“æ–‡ä»¶å
+    },{
+        number: "025<br>12 Juin 2018, 16:27", //åºå·
+        serial: "41", //åºåˆ—å·
+        picture: "41.jpg", //å›¾ç‰‡åç§°
+        type: "audio",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "41.m4a" //åª’ä½“æ–‡ä»¶å
+
+    },{
+        number: "026<br>12 Juin 2018, 16:32", //åºå·
+        serial: "59", //åºåˆ—å·
+        picture: "59.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "59.jpg" //åª’ä½“æ–‡ä»¶å
+    },{
+        number: "027<br>12 Juin 2018, 16:34", //åºå·
+        serial: "111", //åºåˆ—å·
+        picture: "111.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "111.jpg" //åª’ä½“æ–‡ä»¶å
+    },{
+        number: "028<br>12 Juin 2018, 16:36", //åºå·
+        serial: "80", //åºåˆ—å·
+        picture: "80.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "80.jpg" //åª’ä½“æ–‡ä»¶å
+    },{
+        number: "029<br>12 Juin 2018, 16:38", //åºå·
+        serial: "105", //åºåˆ—å·
+        picture: "105.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "105.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "030<br>12 Juin 2018, 17:20", //åºå·
+        serial: "119", //åºåˆ—å·
+        picture: "119.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER : LA PHOTO" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "031<br>14 Juin 2018, 14:54", //åºå·
+        serial: "128", //åºåˆ—å·
+        picture: "128.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER : LA BOUDDHISME" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "032<br>14 Juin 2018, 15:14", //åºå·
+        serial: "82", //åºåˆ—å·
+        picture: "82.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "82.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "033<br>14 Juin 2018, 15:38", //åºå·
+        serial: "68", //åºåˆ—å·
+        picture: "68.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "68.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "034<br>14 Juin 2018, 15:40", //åºå·
+        serial: "70", //åºåˆ—å·
+        picture: "70.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "70.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "035<br>14 Juin 2018, 15:44", //åºå·
+        serial: "64", //åºåˆ—å·
+        picture: "64.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER<br>(PRESQUE)" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "035<br>14 Juin 2018, 15:50", //åºå·
+        serial: "38", //åºåˆ—å·
+        picture: "38.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "38.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "036<br>14 Juin 2018, 15:51", //åºå·
+        serial: "53", //åºåˆ—å·
+        picture: "53.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "53.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "037<br>14 Juin 2018, 15:55", //åºå·
+        serial: "91", //åºåˆ—å·
+        picture: "91.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "91.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "038<br>14 Juin 2018, 16:07", //åºå·
+        serial: "23", //åºåˆ—å·
+        picture: "23.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "23.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "039<br>14 Juin 2018, 16:31", //åºå·
+        serial: "101", //åºåˆ—å·
+        picture: "101.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "101.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "040<br>14 Juin 2018, 16:35", //åºå·
+        serial: "77", //åºåˆ—å·
+        picture: "77.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER<br>(PRESQUE)" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "041<br>14 Juin 2018, 16:56", //åºå·
+        serial: "63", //åºåˆ—å·
+        picture: "63.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "63.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "042<br>14 Juin 2018, 16:59", //åºå·
+        serial: "14", //åºåˆ—å·
+        picture: "14.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "14.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "043<br>14 Juin 2018, 17:10", //åºå·
+        serial: "116", //åºåˆ—å·
+        picture: "116.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "116.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "044<br>14 Juin 2018, 17:28", //åºå·
+        serial: "52", //åºåˆ—å·
+        picture: "52.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "52.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "045<br>14 Juin 2018, 17:32", //åºå·
+        serial: "67", //åºåˆ—å·
+        picture: "67.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "ã€ŠQUE RESTERA-T-IL ?ã€‹<br>JHONNY HALLIDAY" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "046<br>14 Juin 2018, 17:28", //åºå·
+        serial: "15", //åºåˆ—å·
+        picture: "15.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "ã€Šã‚¨ãƒªâ”¼ã‚¼ã€‹<br>THE BEETHOVEN" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "047<br>14 Juin 2018, 17:38", //åºå·
+        serial: "73", //åºåˆ—å·
+        picture: "73.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "73.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "048<br>14 Juin 2018, 17:44", //åºå·
+        serial: "122", //åºåˆ—å·
+        picture: "122.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "122.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "049<br>14 Juin 2018, 17:46", //åºå·
+        serial: "36", //åºåˆ—å·
+        picture: "36.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "UN CALIN" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "050<br>14 Juin 2018, 17:47", //åºå·
+        serial: "83", //åºåˆ—å·
+        picture: "83.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "83.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "051<br>14 Juin 2018, 17:52", //åºå·
+        serial: "109", //åºåˆ—å·
+        picture: "109.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "109.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "052<br>14 Juin 2018, 18:09", //åºå·
+        serial: "18", //åºåˆ—å·
+        picture: "18.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "18.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "053<br>14 Juin 2018, 18:09", //åºå·
+        serial: "28", //åºåˆ—å·
+        picture: "28.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "06 51 ** 00 78<br>SON NUMERO DE PORTABLE" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "054<br>14 Juin 2018, 18:09", //åºå·
+        serial: "123", //åºåˆ—å·
+        picture: "123.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "123.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "055<br>14 Juin 2018, 18:15", //åºå·
+        serial: "69", //åºåˆ—å·
+        picture: "69.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "UN GESTE DE FAIRE COUCOU" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "056<br>14 Juin 2018, 18:17", //åºå·
+        serial: "27", //åºåˆ—å·
+        picture: "27.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "27.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "057<br>14 Juin 2018, 18:34", //åºå·
+        serial: "24", //åºåˆ—å·
+        picture: "24.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER<br>(ECHOUE)" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "058<br>14 Juin 2018, 18:34", //åºå·
+        serial: "76", //åºåˆ—å·
+        picture: "76.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "SE PARLER<br>(ECHOUE)" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "059<br>14 Juin 2018, 18:42", //åºå·
+        serial: "50", //åºåˆ—å·
+        picture: "50.jpg", //å›¾ç‰‡åç§°
+        type: "img",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "50.jpg" //åª’ä½“æ–‡ä»¶å
+    },
+    {
+        number: "060<br>14 Juin 2018, 18:47", //åºå·
+        serial: "65", //åºåˆ—å·
+        picture: "65.jpg", //å›¾ç‰‡åç§°
+        type: "text",//åª’ä½“ç±»å‹ å›¾ç‰‡ï¼šimg éŸ³é¢‘ï¼šaudio è§†é¢‘ï¼švideo
+        media: "UN SOURIRE D'INNOCENCE" //åª’ä½“æ–‡ä»¶å
+    },
 ];
 
 function showPic(ele){
-  $("#exampleModalCenter").find("img").attr("src",$(ele).attr("src"));
-  $("#exampleModalCenter").modal("show");
+    $("#exampleModalCenter").find("img").attr("src",$(ele).attr("src"));
+    $("#exampleModalCenter").modal("show");
 }
 $(function(){
-  for(var i=0;i<LISTS.length;i++){
-    var tr = $("<tr></tr>");
-    var td0 = $("<td></td>");
-    var td0_span = $("<span></span>");
-    td0_span.html(LISTS[i].number);
-    td0.append(td0_span);
-    tr.append(td0);
-    var td1 = $("<td></td>");
-    var td1_span = $("<span></span>");
-    td1_span.html(LISTS[i].serial);
-    td1.append(td1_span);
-    tr.append(td1);
-    var td2 = $("<td></td>");
-    var td2_img = $("<img onclick='showPic(this)'/>");
-    td2_img.attr("src","./images/"+LISTS[i].picture);
-    td2.append(td2_img);
-    tr.append(td2);
-    var td3 = $("<td></td>");
-    if(LISTS[i].type=='img'){
-      var td3_media = $("<img onclick='showPic(this)'/>");
-      td3_media.attr("src","./media/"+LISTS[i].media);
-    }else if(LISTS[i].type=='audio'){
-      var td3_media = $("<audio controls></audio>");
-      td3_media.attr("src","./media/"+LISTS[i].media);
-    }else if(LISTS[i].type=="video"){
-      var td3_media = $("<video controls></video>");
-      td3_media.attr("src","./media/"+LISTS[i].media);
-    }else if(LISTS[i].type=="text"){
-      var td3_media = $("<span></span>");
-      td3_media.html(LISTS[i].media);
+    for(var i=0;i<LISTS.length;i++){
+        var tr = $("<tr></tr>");
+        var td0 = $("<td></td>");
+        var td0_span = $("<span></span>");
+        td0_span.html(LISTS[i].number);
+        td0.append(td0_span);
+        tr.append(td0);
+        var td1 = $("<td></td>");
+        var td1_span = $("<span></span>");
+        td1_span.html(LISTS[i].serial);
+        td1.append(td1_span);
+        tr.append(td1);
+        var td2 = $("<td></td>");
+        var td2_img = $("<img onclick='showPic(this)'/>");
+        td2_img.attr("src","./images/"+LISTS[i].picture);
+        td2.append(td2_img);
+        tr.append(td2);
+        var td3 = $("<td></td>");
+        if(LISTS[i].type=='img'){
+            var td3_media = $("<img onclick='showPic(this)'/>");
+            td3_media.attr("src","./media/"+LISTS[i].media);
+        }else if(LISTS[i].type=='audio'){
+            var td3_media = $("<audio controls></audio>");
+            td3_media.attr("src","./media/"+LISTS[i].media);
+        }else if(LISTS[i].type=="video"){
+            var td3_media = $("<video controls></video>");
+            td3_media.attr("src","./media/"+LISTS[i].media);
+        }else if(LISTS[i].type=="text"){
+            var td3_media = $("<span></span>");
+            td3_media.html(LISTS[i].media);
+        }
+        td3.append(td3_media);
+        if(LISTS[i].remark){
+            var td3_span = $("<p style='margin-top: 20px'></p>");
+            td3_span.html(LISTS[i].remark);
+            td3.append(td3_span);
+        }
+        tr.append(td3);
+        $(".table tbody").append(tr);
     }
-    td3.append(td3_media);
-    if(LISTS[i].remark){
-      var td3_span = $("<p style='margin-top: 20px'></p>");
-      td3_span.html(LISTS[i].remark);
-      td3.append(td3_span);
-    }
-    tr.append(td3);
-    $(".table tbody").append(tr);
-  }
 });
